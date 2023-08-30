@@ -36,9 +36,9 @@ app.get('/', (req, res) => {
 
 // Runs app
 app.listen(8080, () => {
-	// if(env === 'development') {
+	if(env === 'development') {
 		console.log(chalk.magenta('-----------------------------------------------------------------------'));
 		console.log(chalk.magenta(`Server running at http://localhost:8080. Environment is "${env}."`));
 		console.log(chalk.magenta('-----------------------------------------------------------------------'));
-	// }
+	}
 });
